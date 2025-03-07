@@ -23,6 +23,9 @@ export default function WindowsProjectModal() {
             <div
                 className={`bg-[rgba(0,0,0,0.8)] rounded-lg shadow-lg overflow-hidden ${
                     !!modalContent.skills ? "w-3/4 h-9/10" : "w-2/4 h-auto"
+                }
+                ${
+                    !modalContent.ac ? "h-fit" : ""
                 } flex flex-col transform transition-transform duration-200 max-h-[80vh] sm:max-h-none`}
                 onClick={(e) => e.stopPropagation()}
             >
