@@ -14,7 +14,7 @@ export default function WindowsModalSkills({
                 {skills.map((skill, index) => (
                     <li
                         key={index}
-                        className="list-none bg-blue-500 p-2 pt-1 pb-1 rounded-sm"
+                        className="list-none bg-blue-500 p-2 pt-1 pb-1 rounded-sm text-xs"
                     >
                         {skill}
                     </li>

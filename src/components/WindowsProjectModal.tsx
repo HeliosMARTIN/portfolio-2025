@@ -17,12 +17,12 @@ export default function WindowsProjectModal() {
 
     return (
         <div
-            className="fixed inset-0 backdrop-blur flex items-center justify-center z-50 transition-opacity duration-200"
+            className="fixed inset-0 backdrop-blur flex items-center justify-center z-50 transition-opacity duration-200 h-9/10 m-auto"
             onClick={handleClose}
         >
             <div
                 className={`bg-[rgba(0,0,0,0.8)] rounded-lg shadow-lg overflow-hidden ${
-                    !!modalContent.skills ? "w-3/4 h-9/10" : "w-2/4 h-auto"
+                    !!modalContent.skills ? "w-3/4 " : "w-2/4 h-auto"
                 }
                 ${
                     !modalContent.ac ? "h-fit" : ""
@@ -35,12 +35,12 @@ export default function WindowsProjectModal() {
                     className="sticky top-0 z-10"
                     onClose={handleClose}
                 />
-                <div className="scrollbar overflow-hidden sm:overflow-auto">
+                <div className="scrollbar overflow-y-auto sm:overflow-auto">
                     {modalContent.imageUrl &&
                     !imageError &&
                     modalContent.skills ? (
                         <>
-                            <div className="flex flex-col md:flex-row justify-center mt-4 gap-4 sm:gap-10 p-4 w-full">
+                            <div className="scrollbar flex flex-col md:flex-row justify-center mt-4 gap-4 sm:gap-10 p-4 w-full h-fit overflow-y-scroll">
                                 <div className="flex flex-col justify-between md:w-1/2">
                                     <WindowsModalImage
                                         imageUrl={modalContent.imageUrl}
