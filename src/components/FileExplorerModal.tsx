@@ -120,33 +120,33 @@ export default function FileExplorerModal({
             onClick={handleOutsideClick}
         >
             <div className="bg-[rgba(0,0,0,0.8)] rounded-lg shadow-lg overflow-hidden w-3/4 h-3/4 flex flex-col transform transition-transform duration-200">
-                <div className="flex justify-between items-center p-2 bg-[rgba(0,0,0,0.8)]">
-                    <div
-                        className="ml-2 flex items-center"
-                        style={{ width: "40px" }}
-                    >
-                        {history.length > 1 && (
-                            <button
-                                className="text-white text-lg font-bold mr-2 cursor-pointer"
-                                onClick={goBack}
-                            >
-                                &#8592;
-                            </button>
-                        )}
-                    </div>
-                    <div className="flex flex items-center justify-center">
-                        <h2 className="text-lg font-bold">{renderPath()}</h2>
-                    </div>
-                    <div className="flex items-center">
+                <div className="flex justify-between items-center p-2 bg-[rgba(0,0,0,0.8)] relative">
+                    {history.length > 1 && (
                         <button
-                            className="text-white text-lg font-bold mr-2 cursor-pointer"
+                            className="text-white text-lg font-bold cursor-pointer absolute left-4 top-2"
+                            onClick={goBack}
+                        >
+                            &#8592;
+                        </button>
+                    )}
+                    <div className="flex flex items-center justify-center w-full">
+                        <h2 className="text-lg font-bold sm:hidden">
+                            {currentNode.title}
+                        </h2>
+                        <h2 className="text-lg font-bold hidden sm:block">
+                            {renderPath()}
+                        </h2>
+                    </div>
+                    <div className="absolute right-4 top-2">
+                        <button
+                            className="text-white text-lg font-bold cursor-pointer"
                             onClick={handleClose}
                         >
                             &times;
                         </button>
                     </div>
                 </div>
-                <div className="flex-grow p-4 overflow-auto flex flex-wrap">
+                <div className="flex p-4 overflow-auto flex-wrap gap-4 gap-8 sm:gap-0 justify-center items-center sm:justify-start sm:items-start">
                     {Object.values(currentNode.children || {}).map(
                         (child: HierarchyNode, index) => (
                             <div

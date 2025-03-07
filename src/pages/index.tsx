@@ -29,12 +29,12 @@ export default function Home() {
     }, [])
 
     return (
-        <div>
+        <div className="flex flex-col items-center justify-center min-h-screen">
             <>
                 <Head>
                     <title>Portfolio - Hélios Martin</title>
                 </Head>
-                <main className="mt-[5vh] p-8 h-[90vh] flex flex-col items-center">
+                <main className="p-8 h-fit flex flex-col items-center">
                     <h1 className="w-fit p-2 text-3xl font-bold mb-4 bg-orange-200">
                         Portfolio d'Hélios Martin
                     </h1>
@@ -55,12 +55,12 @@ export default function Home() {
                         ))}
                     </div>
                     <div className="flex flex-col items-center mt-6">
-                        <h3 className="mt-4 w-fit p-2 text-2xl font-bold mb-4 bg-black text-white">
+                        <h3 className="mt-4 w-fit p-2 text-2xl font-bold mb-4 bg-black text-white text-center sm:text-left">
                             Deux manières de me découvrir, à vous de choisir !
                         </h3>
                         <div className="flex flex-col md:flex-row gap-8 mt-4">
                             <Link href="/pro">
-                                <div className="block p-6 w-[450px] max-h-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                                <div className="block p-6 w-full sm:w-[450px] max-h-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                                     <h5 className="text-2xl font-bold tracking-tight text-gray-900">
                                         Version Professionnelle
                                     </h5>
@@ -77,7 +77,7 @@ export default function Home() {
                                 </div>
                             </Link>
                             <Link href="/academic">
-                                <div className="block p-6 w-[450px] max-h-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                                <div className="block p-6 w-full sm:w-[450px] max-h-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                                     <h5 className="text-2xl font-bold tracking-tight text-gray-900">
                                         Version Académique
                                     </h5>
