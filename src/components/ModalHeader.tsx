@@ -16,7 +16,7 @@ export default function ModalHeader({ title, url }: ModalHeaderProps) {
                     rel="noopener noreferrer"
                     className="bg-purple-400 text-white p-2 rounded"
                 >
-                    Visiter
+                    Voir
                 </a>
             )}
         </div>

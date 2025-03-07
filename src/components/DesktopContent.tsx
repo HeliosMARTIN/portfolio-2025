@@ -12,7 +12,6 @@ interface DesktopContentProps {
 export default function DesktopContent({ proChildren }: DesktopContentProps) {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedNode, setSelectedNode] = useState<HierarchyNode | null>(null)
-    const { setModalContent, setModalOpen } = useAppContext()
 
     const openFileExplorerModal = (node: HierarchyNode) => {
         setSelectedNode(node)

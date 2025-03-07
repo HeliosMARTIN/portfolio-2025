@@ -5,6 +5,8 @@ export interface HierarchyNode<T = any> {
     info?: string
     skills?: string[]
     url?: string
+    ac?: { acCode: string; acName: string; acJustification: string }[]
+    competences?: string[]
 }
 
 export interface Hierarchy<T = any> {

@@ -64,6 +64,8 @@ export default function FileExplorerModal({
                 imageUrl: `/images/${node.name}.png`,
                 skills: node.skills,
                 url: node.url,
+                ac: node.ac,
+                competences: node.competences,
             },
             setModalContent,
             setModalOpen

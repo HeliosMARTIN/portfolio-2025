@@ -4,7 +4,7 @@ interface CompetencesListProps {
 
 export default function CompetencesList({ competences }: CompetencesListProps) {
     return (
-        <div className="p-4 mt-4 rounded">
+        <div className="hidden sm:block p-4 mt-4 rounded">
             <h3 className="text-md font-semibold text-white">
                 Compétences académiques:
             </h3>

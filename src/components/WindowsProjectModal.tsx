@@ -22,54 +22,54 @@ export default function WindowsProjectModal() {
         >
             <div
                 className={`bg-[rgba(0,0,0,0.8)] rounded-lg shadow-lg overflow-hidden ${
-                    !!modalContent.skills ? "w-3/4 h-fit" : "w-2/4 h-auto"
-                } flex flex-col transform transition-transform duration-200`}
+                    !!modalContent.skills ? "w-3/4 h-9/10" : "w-2/4 h-auto"
+                } flex flex-col transform transition-transform duration-200 max-h-[80vh] sm:max-h-none`}
                 onClick={(e) => e.stopPropagation()}
             >
-                <button
-                    className="absolute top-3 right-4 text-white text-lg font-bold cursor-pointer"
-                    onClick={handleClose}
-                >
-                    &times;
-                </button>
                 <WindowsModalHeader
                     title={modalContent.title}
                     url={modalContent.url}
+                    className="sticky top-0 z-10"
+                    onClose={handleClose}
                 />
-                {modalContent.imageUrl && !imageError && modalContent.skills ? (
-                    <>
-                        <div className="flex flex-col md:flex-row justify-center mt-4 gap-10 p-4 w-full">
-                            <div className="flex flex-col justify-between md:w-1/2">
-                                <WindowsModalImage
-                                    imageUrl={modalContent.imageUrl}
-                                    title={modalContent.title}
-                                    setImageError={setImageError}
-                                />
-                                <WindowsModalSkills
-                                    skills={modalContent.skills}
+                <div className="scrollbar overflow-hidden sm:overflow-auto">
+                    {modalContent.imageUrl &&
+                    !imageError &&
+                    modalContent.skills ? (
+                        <>
+                            <div className="flex flex-col md:flex-row justify-center mt-4 gap-4 sm:gap-10 p-4 w-full">
+                                <div className="flex flex-col justify-between md:w-1/2">
+                                    <WindowsModalImage
+                                        imageUrl={modalContent.imageUrl}
+                                        title={modalContent.title}
+                                        setImageError={setImageError}
+                                    />
+                                    <WindowsModalSkills
+                                        skills={modalContent.skills}
+                                    />
+                                </div>
+                                <WindowsModalDescription
+                                    description={modalContent.description}
+                                    withImage={!!modalContent.imageUrl}
                                 />
                             </div>
-                            <WindowsModalDescription
-                                description={modalContent.description}
-                                withImage={!!modalContent.imageUrl}
-                            />
-                        </div>
-                        <div className="flex flex-row w-full gap-40 p-4 pt-0">
-                            {modalContent.ac && (
-                                <AcList items={modalContent.ac} />
-                            )}
-                            {modalContent.competences && (
-                                <CompetencesList
-                                    competences={modalContent.competences}
-                                />
-                            )}
-                        </div>
-                    </>
-                ) : (
-                    <WindowsModalDescription
-                        description={modalContent.description}
-                    />
-                )}
+                            <div className="flex flex-row w-full gap-4 p-4 pt-0">
+                                {modalContent.ac && (
+                                    <AcList items={modalContent.ac} />
+                                )}
+                                {modalContent.competences && (
+                                    <CompetencesList
+                                        competences={modalContent.competences}
+                                    />
+                                )}
+                            </div>
+                        </>
+                    ) : (
+                        <WindowsModalDescription
+                            description={modalContent.description}
+                        />
+                    )}
+                </div>
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ export interface ProjectContent {
     imageUrl: string
     skills?: string[]
     url?: string
-    ac?: { acCode: string; acName: string }[] // apprentissages critique
+    ac?: { acCode: string; acName: string; acJustification: string }[] // apprentissages critique
     competences?: string[] // compétences académiques
 }
 interface AppContextProps {
