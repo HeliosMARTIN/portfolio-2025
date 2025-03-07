@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+/* Custom scrollbar styling */
+.scrollbar::-webkit-scrollbar {
+    width: 6px; /* Thin scrollbar */
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    background: transparent; /* Transparent background */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: white; /* White scrollbar */
+    border-radius: 10px; /* Rounded edges */
+}
+
+/* Apply the Ubuntu font to the body */
+body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+.neumorphism-1{
+    background: #ededed;
+   
+}
+
+
+.neumorphism-2{
+    background: linear-gradient(145deg, #f8f8f8, #d1d1d1);
+    box-shadow:  8px 8px 16px #c8c8c8,
+    -8px -8px 16px #ffffff;
+}
+
+.neumorphism-3{
+    border-radius: 7px;
+background: #ededed;
+box-shadow:  4px 4px 9px #cecece,
+             -4px -4px 9px #ffffff;
+}
+
+
+
+.neumorphism-4{
+    border-radius: 10px;
+    background: #ededed;
+    box-shadow:  10px 10px 20px #d8d8d8,
+                 -10px -10px 20px #ffffff;
+            
+}
+
+.neumorphism-5{
+    border-radius: 10px;
+background: #ededed;
+box-shadow: inset 10px 10px 20px #d8d8d8,
+            inset -10px -10px 20px #ffffff;
+}
+

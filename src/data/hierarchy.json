@@ -1,0 +1,121 @@
+{
+    "title": "origin",
+    "name": "/",
+    "children": [
+        {
+    "title": "Portfolio",
+    "name": "pro",
+    "children": [
+      {
+        "title": "Projets",
+        "name": "projets",
+        "children": [
+            {
+                "title": "Dev Web",
+                "name": "devweb",
+                "children": [  
+                    {
+                        "title": "Portfolio 2023",
+                        "name": "portfolio_2023",
+                        "children": [],
+                        "info": "La création de mon ancien Portfolio en 2023 a marqué une étape clé dans mon apprentissage du développement web. Conçu lors de mon deuxième semestre en première année de BUT MMI, ce projet avait une triple ambition : présenter mes réalisations, démontrer mes compétences techniques et servir de CV interactif. \n\nDéveloppé en HTML, CSS, JavaScript, PHP et MySQL, ce portfolio proposait une page d’accueil dynamique, un listing de mes projets, un design original et un système de connexion permettant de distinguer les visiteurs et l’administrateur. Ce dernier avait accès à une interface dédiée pour gérer le contenu du site. \n\nCe projet, réalisé en autonomie, a représenté un véritable défi technique. La mise en place d’une base de données, la gestion des sessions utilisateurs, l’optimisation du design et le responsive design étaient encore des concepts nouveaux pour moi. J’ai dû expérimenter, tester et corriger de nombreuses erreurs pour parvenir à un résultat fonctionnel et esthétique.\n\n Aujourd’hui, avec plus d’expérience, je referais ce projet avec un code plus structuré, efficace et moderne, en intégrant des technologies plus récentes et en repensant le concept pour une meilleure expérience utilisateur. Néanmoins, ce portfolio reste un jalon important dans mon parcours, illustrant mes premiers pas dans le développement web et ma progression dans ce domaine.",
+                        "skills": ["HTML","CSS", "JS", "PHP", "MySQL"]
+                    },
+                    {
+                        "title": "E-Commerce - Le Monde De La Glisse",
+                        "name": "ecommerce_lmdlg",
+                        "children": [],
+                        "info": "Ce site web d'e-commerce axé sur les sports de glisse nautique représente mon premier projet significatif en développement web. Initié lors de mon premier semestre en première année du BUT MMI, ce site a été réalisé dans le cadre d'une SAE (Situation d'Apprentissage et d'Évaluation) dans le domaine du développement web.\n\n L'objectif principal de cette expérience était de mettre en pratique mes connaissances nouvellement acquises en matière de développement.\n\n En travaillant en binôme, cette collaboration m'a surtout permis d'appréhender les bases de la conception de sites web. Ce projet a été une opportunité cruciale pour découvrir les différents aspects du développement web, des premières lignes de code jusqu'à la visualisation d'un site fonctionnel.\n\n Ce site d'e-commerce dédié aux sports de glisse nautique représente donc bien plus qu'une simple vitrine virtuelle. Il marque mes premiers pas dans le monde du développement, soulignant ma découverte de ce champ de compétence et le début de mon apprentissage dans ce domaine.\n\n La réalisation de ce projet a impliqué principalement l'utilisation de HTML pour la structure, CSS pour la mise en forme et PHP (+MySQL) pour la gestion des données côté serveur.",
+                        "skills": ["HTML","CSS", "JS", "PHP", "MySQL"]
+                    },
+                    {
+                        "title": "MMI LAN 2023",
+                        "name": "mmilan_2023",
+                        "children": [],
+                        "info": "La création de la page d'accueil pour le site de la MMI LAN, tournoi de jeux vidéo organisé par les étudiants MMI à Toulon, représente une étape significative dans mon parcours de développement web. En traduisant les conceptions de maquettes Figma en code, j'ai consolidé mes compétences, passant de la vision graphique à une réalité fonctionnelle.\n \n Cependant, ce projet, guidé par une SAE (Situation d'Apprentissage et d'Évaluation) se distingue avant tout par mon rôle dans cet environnement de travail collaboratif. En intégrant une équipe de plus de 15 personnes, j'ai assumé la responsabilité de la gestion du dépôt sur GitHub et réalisé de nombreuses revues (reviews) de code.\n \n Cette expérience a marqué une évolution significative depuis mon premier projet, le site d'ecommerce (Le Monde de la Glisse). La complexité du projet de la MMI LAN a non seulement élargi mes compétences techniques, mais m'a également apporté une compréhension approfondie de la collaboration au sein d'une équipe de développement.\n \n Ce projet a été construit sur les bases incontournables de HTML et CSS pour la structure et la mise en forme. Pour apporter une dynamique à l'expérience utilisateur, j’ai aussi utilisé du JavaScript. Du côté serveur, la gestion des données a été assurée par l'utilisation de PHP et MySQL.",
+                        "skills": ["HTML","CSS", "JS", "PHP", "MySQL"],
+                        "url":"https://mmilan-toulon.alexandrecadel.fr/"
+                    },
+                    {
+                        "title": "HiComea",
+                        "name": "hicomea",
+                        "children": [],
+                        "info": "Le projet HiComea s’inscrit dans le cadre d’une SAE (Situation d'Apprentissage et d'Evaluation), où nous devions créer une agence de communication fictive et développer son site web. Travaillant en équipe sur l’identité et les services de l’agence, j’ai assumé seul la conception du site, en utilisant WordPress et des plugins populaires pour mettre en place une solution fonctionnelle et professionnelle.\n\n Le site HiComea intégrait plusieurs fonctionnalités essentielles : présentation des offres de l’agence, blog, système de connexion pour les clients avec un espace dédié, connexion administrateur et page de contact. L’un des défis majeurs a été la gestion des espaces clients et des connexions, un aspect clé pour garantir une navigation fluide et sécurisée.\n\n Ce projet a été une véritable introduction au no-code et m’a permis de découvrir les possibilités offertes par WordPress. Contrairement à mes autres réalisations en code natif, l’approche ici était différente : il fallait apprendre à exploiter les outils existants plutôt que de tout coder soi-même. Travailler sur un site pour une agence dont nous avions défini l’identité visuelle en amont a également été une expérience enrichissante, permettant une meilleure cohérence entre le design et le développement.\n\n Bien que WordPress offre des solutions rapides et efficaces, ce projet m’a aussi fait prendre conscience des limites du no-code et de l’importance de personnaliser les outils pour répondre aux besoins spécifiques d’un projet. Une expérience qui m’a permis d’élargir ma vision du développement web !",
+                        "skills": ["WORDPRESS"]
+                    },
+                    {
+                        "title": "Polymedia",
+                        "name": "polymedia",
+                        "children": [],
+                        "info": "Polymedia est un site web développé en deuxième année dans le cadre d’une SAE (Situation d'Apprentissage et d'Evaluation) par groupe de quatre.\n\n Conçu pour une médiathèque, il permet aux utilisateurs de consulter un vaste catalogue de contenus, gérer leurs emprunts et réservations, et accéder à un espace personnel sécurisé. Un espace administrateur est également intégré pour faciliter la gestion des médias et des utilisateurs.\n\n Pensé pour être accessible sur plusieurs supports, le projet comprend également une application mobile Kotlin, proposant une version simplifiée de l’expérience utilisateur.\n\n Le site repose sur une stack technologique performante :\nLaravel pour le backend, offrant une base solide et sécurisée.\n Alpine.js pour dynamiser l’interface sans alourdir le code.\n Docker pour la conteneurisation et la gestion simplifiée des environnements de développement et de production.\n AWS EC2 pour l’hébergement, garantissant une disponibilité et une scalabilité optimales.\n\n Le projet marquait également une première expérience avec AWS EC2 et Docker, un défi technique qui a nécessité une montée en compétences rapide pour la configuration des serveurs et la mise en ligne de l’application.\n\n C'était un projet complet et fonctionnel, livré avec toutes les fonctionnalités nécessaires pour une médiathèque moderne. Bien que des améliorations puissent encore être apportées, notamment sur des détails d’ergonomie ou d’optimisation, le site remplissait son objectif : offrir une gestion intuitive et efficace des ressources culturelles d’une médiathèque.",
+                        "skills": ["Laravel", "AlpineJS","MySQL", "Kotlin", "Docker", "AWS EC2"],
+                        "url":"https://github.com/Kelyesse/SAE401"
+                    }
+                ]
+            },
+            {
+                "title": "Fin-Tech",
+                "name": "finance",
+                "children": [
+                    {
+                        "title": "Trading Bot",
+                        "name": "trading_bot",
+                        "children": [],
+                        "info": "Le développement de ce bot de trading automatisé représente un projet personnel ambitieux, mené en duo avec un ami. Conçu pour fonctionner avec l’API de XTB (plateforme de trading) et déployé sur un serveur Windows EC2 (anciennement aussi sous Linux), ce bot vise à analyser le marché et exécuter des ordres de manière autonome, en suivant une stratégie définie.\n\n Développé en Python, il exploite l’API de XTB pour récupérer en temps réel les données de marché, placer des trades et gérer le risque selon des paramètres préétablis. L’un des défis majeurs a été l’intégration des indicateurs techniques et algorithmes de décision, nécessitant une compréhension approfondie des marchés financiers et de l’automatisation du trading.\n\n Ce projet m’a permis de renforcer mes compétences en programmation Python, gestion d’API, et déploiement sur serveur distant. Travailler en binôme nous a également amenés à structurer notre code efficacement et à collaborer sur l’optimisation des stratégies.\n\n Bien que déjà fonctionnel, le bot reste en constante évolution. À l’avenir, nous envisageons d’améliorer sa gestion du risque, d’optimiser les performances et d’intégrer de nouvelles stratégies adaptatives pour maximiser sa rentabilité. Ce projet illustre mon intérêt pour le développement, l’automatisation et le trading algorithmique, tout en me poussant à affiner mes compétences techniques et analytiques.",
+                        "skills": ["JS","Python", "API Rest", "AWS EC2"]
+                    }
+                ]
+            }
+        ]
+      },
+      {
+        "title": "Profil",
+        "name": "profil",
+        "children": [
+            {
+                "title": "CV",
+                "name": "cv",
+                "children": [
+                    {
+                        "title": "CV - Hélios Martin",
+                        "name": "cv_helios_martin.pdf",
+                        "children": [],
+                        "info": ""
+                    }
+                ]
+            },
+            {
+                "title": "Liens utiles",
+                "name": "liens",
+                "children": [
+                    {
+                        "title": "GitHub",
+                        "name": "github",
+                        "children": [],
+                        "url":"https://github.com/HeliosMARTIN"
+                    },
+                    {
+                        "title": "LinkedIn",
+                        "name": "linkedin",
+                        "children": [],
+                        "url":"https://linkedin.com/in/helios-martin"
+                    }
+                ]
+            },
+            {
+                "title": "Parcours",
+                "name": "parcours",
+                "children": [
+                    {
+                        "title": "Mon parcours",
+                        "name": "mon_parcours",
+                        "children": [],
+                        "info": "Bonjour ! Je m'appelle Hélios Martin, j'ai 19 ans et je suis actuellement en troisième année du BUT Métiers du Multimédia et de l'Internet, une formation qui m'a permis de plonger dans l'univers fascinant du développement web et des technologies numériques. De plus, je suis alternant depuis 2 ans chez Swello, une merveilleuse entreprise qui me permet de beaucoup progresser !"
+                    }
+                ]
+            }
+        ]
+      }
+    ]
+  }]
+}
