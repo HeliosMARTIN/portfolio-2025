@@ -1,7 +1,7 @@
 import { hierarchy } from "../../context/AppContext"
 import Layout from "../../components/Layout"
 import Image from "next/image"
-import Head from "next/head"
+import { NextSeo } from "next-seo"
 import windowsBg from "../../../public/space-bg.png"
 import { useEffect, useState } from "react"
 import Taskbar from "../../components/Taskbar"
@@ -51,9 +51,15 @@ export default function AcademicPage() {
 
     return (
         <Layout>
-            <Head>
-                <title>Portfolio - Windows - Hélios Martin</title>
-            </Head>
+            <NextSeo
+                title="Version Académique - Interface Windows"
+                description="Découvrez mon portfolio via une interface graphique Windows. Parcourez mes projets, compétences et mon parcours professionnel de manière visuelle et intuitive."
+                openGraph={{
+                    title: "Portfolio Windows - Hélios Martin",
+                    description:
+                        "Interface Windows graphique pour découvrir le portfolio d'un développeur web fullstack.",
+                }}
+            />
             <main className="relative h-screen bg-gray-900">
                 <Image
                     src={windowsBg}

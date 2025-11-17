@@ -1,15 +1,14 @@
 import { AppProps } from "next/app"
-import Head from "next/head"
+import { DefaultSeo } from "next-seo"
 import { Analytics } from "@vercel/analytics/react"
 import { AppProvider } from "../context/AppContext"
+import SEO from "../config/seo.config"
 import "../styles/globals.css"
 
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
-            <Head>
-                <link rel="icon" href="/favicon.jpg" />
-            </Head>
+            <DefaultSeo {...SEO} />
             <AppProvider>
                 <Component {...pageProps} />
             </AppProvider>
