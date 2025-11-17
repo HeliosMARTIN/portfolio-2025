@@ -1,6 +1,7 @@
 import Link from "next/link"
 import { NextSeo } from "next-seo"
 import { useEffect, useState } from "react"
+import PersonSchema from "../components/PersonSchema"
 
 export default function Home() {
     const phrases = [
@@ -40,6 +41,7 @@ export default function Home() {
                             "Développeur web fullstack alternant basé à Toulon. Découvrez mes projets via un terminal de commandes ou une interface graphique.",
                     }}
                 />
+                <PersonSchema />
                 <main className="p-8 h-fit flex flex-col items-center">
                     <h1 className="w-fit p-2 text-3xl font-bold mb-4 bg-orange-200">
                         Portfolio d'Hélios Martin
