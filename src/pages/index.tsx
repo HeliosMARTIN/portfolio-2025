@@ -3,6 +3,8 @@ import { NextSeo } from "next-seo"
 import { useEffect, useState } from "react"
 import PersonSchema from "../components/PersonSchema"
 import SpotlightCard from "../components/SpotlightCard"
+import DecryptedText from "../components/DecryptedText"
+import ShinyText from "../components/ShinyText"
 
 export default function Home() {
     const phrases = [
@@ -44,23 +46,34 @@ export default function Home() {
                 />
                 <PersonSchema />
                 <main className="p-8 h-fit flex flex-col items-center">
-                    <h1 className="w-fit p-2 text-3xl font-bold mb-4 bg-orange-200">
-                        Portfolio d'Hélios Martin
-                    </h1>
+                    <div className="mb-4 bg-orange-200 p-2 w-fit">
+                        <ShinyText
+                            text="Portfolio d'Hélios Martin"
+                            disabled={false}
+                            speed={3}
+                            className="text-3xl font-bold text-black"
+                        />
+                    </div>
                     <h2 className="w-fit p-2 text-3xl font-bold mb-4 bg-blue-300">
                         développeur web fullstack
                     </h2>
                     <div className="flex flex-wrap justify-center gap-4 mt-8">
                         {shuffledPhrases.map((phrase, index) => (
-                            <p
+                            <div
                                 key={index}
                                 className="w-fit p-2 text-2xl font-bold mb-4 bg-purple-400 text-white"
                                 style={{
                                     transform: `rotate(${getRandomRotation()}deg)`,
                                 }}
                             >
-                                {phrase}
-                            </p>
+                                <DecryptedText
+                                    text={phrase}
+                                    animateOn="view"
+                                    speed={100}
+                                    maxIterations={20}
+                                    className="text-white"
+                                />
+                            </div>
                         ))}
                     </div>
                     <div className="flex flex-col items-center mt-6">

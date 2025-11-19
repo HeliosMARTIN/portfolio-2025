@@ -62,3 +62,16 @@ box-shadow: inset 10px 10px 20px #d8d8d8,
     background-size: 20px 20px;
 }
 
+@keyframes shine {
+    0% {
+        background-position: 100%;
+    }
+    100% {
+        background-position: -100%;
+    }
+}
+
+.animate-shine {
+    animation: shine 5s linear infinite;
+}
+
