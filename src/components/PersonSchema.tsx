@@ -12,7 +12,7 @@ export default function PersonSchema({
     name = "Hélios Martin",
     jobTitle = "Développeur Web Fullstack",
     description = "Développeur web fullstack alternant basé à Toulon. Passionné par JavaScript, TypeScript, React et Next.js.",
-    url = "https://portfolio-2025.vercel.app",
+    url = "https://helios-martin.vercel.app",
     location = "Toulon, France",
 }: PersonSchemaProps) {
     const structuredData = {

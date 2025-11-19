@@ -1,6 +1,6 @@
 import { DefaultSeoProps } from "next-seo"
 
-const canonicalUrl = "https://portfolio-2025.vercel.app"
+const canonicalUrl = "https://helios-martin.vercel.app"
 
 const SEO: DefaultSeoProps = {
     titleTemplate: "%s | Hélios Martin",

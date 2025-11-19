@@ -2,6 +2,7 @@ import Link from "next/link"
 import { NextSeo } from "next-seo"
 import { useEffect, useState } from "react"
 import PersonSchema from "../components/PersonSchema"
+import SpotlightCard from "../components/SpotlightCard"
 
 export default function Home() {
     const phrases = [
@@ -30,7 +31,7 @@ export default function Home() {
     }, [])
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-dot-pattern">
             <>
                 <NextSeo
                     title="Accueil"
@@ -68,7 +69,7 @@ export default function Home() {
                         </h3>
                         <div className="flex flex-col md:flex-row gap-8 mt-4">
                             <Link href="/pro">
-                                <div className="block p-6 w-full sm:w-[450px] max-h-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                                <SpotlightCard className="block p-6 w-full sm:w-[450px] max-h-sm bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                                     <h5 className="text-2xl font-bold tracking-tight text-gray-900">
                                         Version Professionnelle
                                     </h5>
@@ -82,10 +83,10 @@ export default function Home() {
                                         et en apprendre davantage sur le
                                         développeur que je suis.
                                     </p>
-                                </div>
+                                </SpotlightCard>
                             </Link>
                             <Link href="/academic">
-                                <div className="block p-6 w-full sm:w-[450px] max-h-sm bg-white rounded-lg border border-gray-200 shadow-md hover:bg-gray-100 hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
+                                <SpotlightCard className="block p-6 w-full sm:w-[450px] max-h-sm bg-white rounded-lg border border-gray-200 shadow-md hover:shadow-lg transform hover:-translate-y-1 transition-all duration-300">
                                     <h5 className="text-2xl font-bold tracking-tight text-gray-900">
                                         Version Académique
                                     </h5>
@@ -98,7 +99,7 @@ export default function Home() {
                                         (Windows) pour découvrir mes projets,
                                         mes compétences et mon parcours.
                                     </p>
-                                </div>
+                                </SpotlightCard>
                             </Link>
                         </div>
                     </div>

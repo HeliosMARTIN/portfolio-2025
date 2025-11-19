@@ -7,7 +7,7 @@ export default function WebsiteSchema() {
         name: "Portfolio d'Hélios Martin",
         description:
             "Portfolio professionnel d'Hélios Martin, développeur web fullstack. Découvrez mes projets, compétences et mon parcours.",
-        url: "https://portfolio-2025.vercel.app",
+        url: "https://helios-martin.vercel.app",
         inLanguage: "fr-FR",
         author: {
             "@type": "Person",
@@ -25,7 +25,7 @@ export default function WebsiteSchema() {
             target: {
                 "@type": "EntryPoint",
                 urlTemplate:
-                    "https://portfolio-2025.vercel.app/?q={search_term_string}",
+                    "https://helios-martin.vercel.app/?q={search_term_string}",
             },
             "query-input": "required name=search_term_string",
         },
