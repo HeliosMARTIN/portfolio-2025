@@ -1,7 +1,7 @@
 import { useState, FormEvent, useEffect, useRef } from "react"
 import { useRouter } from "next/router"
 import Layout from "../../components/Layout"
-import Head from "next/head"
+import { NextSeo } from "next-seo"
 import {
     handleCommand,
     CommandResult,
@@ -183,9 +183,15 @@ export default function Professional() {
 
     return (
         <Layout>
-            <Head>
-                <title>Portfolio - Terminal - Hélios Martin</title>
-            </Head>
+            <NextSeo
+                title="Version Professionnelle - Terminal"
+                description="Explorez mon portfolio via un terminal de commandes. Découvrez mes projets, compétences et parcours de développeur web fullstack de manière interactive."
+                openGraph={{
+                    title: "Portfolio Terminal - Hélios Martin",
+                    description:
+                        "Interface terminal interactive pour explorer le portfolio d'un développeur web fullstack.",
+                }}
+            />
             <Modal />
             <div
                 className="bg-[url('/space-bg.png')] bg-cover bg-no-repeat p-4 h-screen w-screen text-white flex justify-center items-center"

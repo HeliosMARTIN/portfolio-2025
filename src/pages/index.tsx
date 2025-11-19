@@ -1,6 +1,7 @@
 import Link from "next/link"
-import Head from "next/head"
+import { NextSeo } from "next-seo"
 import { useEffect, useState } from "react"
+import PersonSchema from "../components/PersonSchema"
 
 export default function Home() {
     const phrases = [
@@ -31,9 +32,16 @@ export default function Home() {
     return (
         <div className="flex flex-col items-center justify-center min-h-screen">
             <>
-                <Head>
-                    <title>Portfolio - Hélios Martin</title>
-                </Head>
+                <NextSeo
+                    title="Accueil"
+                    description="Portfolio d'Hélios Martin, développeur web fullstack alternant. Choisissez entre la version professionnelle (terminal) ou académique (interface graphique)."
+                    openGraph={{
+                        title: "Portfolio - Hélios Martin",
+                        description:
+                            "Développeur web fullstack alternant basé à Toulon. Découvrez mes projets via un terminal de commandes ou une interface graphique.",
+                    }}
+                />
+                <PersonSchema />
                 <main className="p-8 h-fit flex flex-col items-center">
                     <h1 className="w-fit p-2 text-3xl font-bold mb-4 bg-orange-200">
                         Portfolio d'Hélios Martin
