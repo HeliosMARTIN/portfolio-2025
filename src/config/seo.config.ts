@@ -39,6 +39,10 @@ const SEO: DefaultSeoProps = {
     },
     additionalMetaTags: [
         {
+            name: "google-site-verification",
+            content: "VCwx1ug_m2MxMYoqHRyBH_8SMsXNeXNAMUu8f9_6XPk",
+        },
+        {
             name: "viewport",
             content: "width=device-width, initial-scale=1",
         },
